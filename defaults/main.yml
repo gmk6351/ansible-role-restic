@@ -1,3 +1,4 @@
 ---
 restic_user: restic
 restic_home: /var/opt/restic
+restic_install_prefix: /opt/restic

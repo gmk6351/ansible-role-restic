@@ -8,3 +8,11 @@
     skeleton: false
     shell: /usr/sbin/nologin
     home: "{{ restic_home }}"
+
+- name: Create install path
+  ansible.builtin.file:
+    path: "{{ restic_install_prefix }}/bin"
+    state: directory
+    mode: '0755'
+    owner: root
+    group: root
