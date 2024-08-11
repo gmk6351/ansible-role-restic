@@ -1,0 +1,7 @@
+---
+galaxy_info:
+  author: Gerrit M. Keller
+  role_name: restic
+  description: Install restic and setup automatic backup
+  license: undefined
+  min_ansible_version: "2.7"
