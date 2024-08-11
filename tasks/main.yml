@@ -1,0 +1,10 @@
+---
+- name: Add restic user
+  ansible.builtin.user:
+    name: "{{ restic_user }}"
+    state: present
+    system: true
+    create_home: true
+    skeleton: false
+    shell: /usr/sbin/nologin
+    home: "{{ restic_home }}"
